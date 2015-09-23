@@ -18,7 +18,7 @@ for i in range(students):
     total_grade = 0
     average = 0
     assignments = 0
-    letter_score = '*null*'
+    letter_score = ''
     
     # When user enters -1, the while loop breaks. 
     while grade > 0:

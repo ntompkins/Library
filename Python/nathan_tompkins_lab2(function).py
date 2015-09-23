@@ -2,7 +2,7 @@
 # name: Nathan Tompkins
 # date: 9.10.15
 
-#        UNIT CONVERTER
+# UNIT CONVERTER
 # This program converts between:
 #  * kilometers and miles
 #  * fahrenheit and celsius
