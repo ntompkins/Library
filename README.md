@@ -1,3 +1,4 @@
 #Library
-This is a collection of code used for reference and comprehension.
-There's not much to see.
+This is a collection of code used for reference and comprehension.<br>
+Python scripts are assignments administered for an introductory course.<br>
+JS, CSS, and PHP are all for my web projects.
