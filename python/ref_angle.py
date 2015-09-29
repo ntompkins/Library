@@ -1,4 +1,4 @@
-# Reference angle finder / trig function calculator
+# Reference Angle Finder / Trig Function Calculator
 # Made by Nathan Tompkins | http://github.com/ntompkins
 
 print("REFERENCE ANGLE FINDER")
