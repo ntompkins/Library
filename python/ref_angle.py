@@ -1,13 +1,15 @@
 # Reference Angle Finder / Trig Function Calculator
 # Made by Nathan Tompkins | http://github.com/ntompkins
+
 # Import trig functions from the math library
 import math
 
-print("REFERENCE ANGLE FINDER")
+print("Reference Angle Finder")
 print("Valid functions are sin, sine, cos, cosine, tan, and tangent.\nType \'quit\' to exit.")
 
-# Define quadrant finding function
+# Define function
 def find_all():
+    
     # Define variables:
     org_angle = 0
     correction = "false"
