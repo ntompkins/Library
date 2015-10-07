@@ -1,5 +1,7 @@
 # nathan_tompkins_ic5.py
-# Nathan Tompkins | 10.5.15
+# Unit Converter + Functions
+# Nathan Tompkins
+# 10.5.15
 
 def results():
     print(quantity,unit,"=",new_quantity,new_unit)
