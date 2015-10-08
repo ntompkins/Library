@@ -1,4 +1,4 @@
-# nathan_tompkins_lab5.py 
+# nathan_tompkins_lab5.py
 # Number Guesser
 # Nathan Tompkins | 10.7.15
 
@@ -7,7 +7,7 @@ import random
 def main():
     # Set random number
     rand_number = random.randint(1, 100)
-    
+
     # Set variables
     guess = rand_number - 1
     guess_count = 0
@@ -45,8 +45,7 @@ while query != "no":
     query = str(input("\nWould you like to try again? ( yes or no ): "))
     if query == "yes":
         main()
-        
+
 print("\n-END-")
 quit()
-    
     
