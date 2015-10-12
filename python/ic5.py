@@ -5,13 +5,13 @@
 
 def results():
     print(quantity,unit,"=",new_quantity,new_unit)
-    
 # Miles to Kilometers function
 def milesToKm():
     if quantity < 0:
         print("I\'m sorry, that's not a valid input.")
     else:
         new_quantity = quantity / 1.6
+        print(new_quantity,"\n")
 
 # Fahrenheit to Celsius function
 def FahToCel():
@@ -19,6 +19,7 @@ def FahToCel():
         print("I\'m sorry, that's not a valid input.")
     else:
         new_quantity = (quantity - 32)*(5/9)
+        print(new_quantity,"\n")
 
 # Gallons to Liters function
 def GalToLit():
@@ -47,14 +48,20 @@ def InchesToCm():
 # main function
 def main():
     print("Unit Converter")
+    quantity = float(input("Your quantity: "))
+    milesToKm(quantity)
+    FahToCel(quantity)
+    GalToLit(quantity)
+    PoundsToKg(quantity)
+    InchesToCm(quantity)
     global quantity
     quantity = float(input("Your quantity: "))
-    
+
     milesToKm()
     unit = "Miles"
     new_unit = "Kilometers"
     results()
-    
+
     FahToCel()
     GalToLit()
     PoundsToKg()
