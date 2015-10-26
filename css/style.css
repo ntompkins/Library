@@ -141,6 +141,7 @@ td, th {
   width: 45%;
   font-family: Lato;
   font-weight: 300;
+  background-color: #999;
   background-color: rgba(0,0,0,.7);
   height: auto;
   margin: 150px 0 20% auto;
