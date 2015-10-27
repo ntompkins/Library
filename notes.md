@@ -1,5 +1,6 @@
-Topics to Review
+Review
 ===
+#####Python Concepts
 * Repetition structures
 * How to generate random numbers
 * Define and use returning functions
