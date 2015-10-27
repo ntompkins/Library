@@ -1,0 +1,21 @@
+@charset "utf8"
+
+$font-rules {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+$sans-fonts {
+    font-family: Lato, Helvetica, Arial, Roboto, sans-serif
+}
+$serif-fonts {
+    font-family: serif;
+}
+$body-color {
+    color: #676d79;
+}
+
+
+html
