@@ -1,0 +1,120 @@
+@import "bourbon/bourbon";
+/* Fonts */
+$sans-fonts:    "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+$serif-fonts:   serif;
+
+/* Colors */
+$dark-blue-gray:    #676d79;
+$light-blue-gray:   #677aa0;
+
+$dark-red:          #d64541;
+$light-red:         #e35f59;
+
+$dark-green:        #87a898;
+$light-green:       #93e9be;
+
+$dark-gray:         #5b5e63;
+$dark-gray-trans:   rgba(#5b5e63, 0.56);
+$med-gray:          #818181;
+$light-gray:        #f9f9fa;
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+    margin: -10px auto;
+    position: fixed;
+    background: $dark-gray;
+    & .header {
+        margin: 5px auto 5px 5%;
+        color: $light-green;
+        font: {
+            family: $sans-fonts;
+            size: 24px;
+            weight: 300;
+        }
+        float: left;
+    }
+    & .list {
+        list-style: none;
+        float: right;
+        margin: 10px 8% 0 auto;
+        & .item {
+            margin: auto;
+            display: inline-block;
+            & a {
+                margin: -2px;
+                padding: 10px 25px 15px 25px;
+                text-decoration: none;
+                color: $med-gray;
+                background-color: $dark-gray;
+                font: {
+                    family: $sans-fonts;
+                    size: 16px;
+                    weight: 400;
+                }
+                text-transform: uppercase;
+                transition: ease all .2s;
+                &:hover, &:active {
+                    color: $light-gray;
+                    background-color: $med-gray;
+                }
+            }
+        }
+    }
+}
+
+.article {
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+    & .title {
+        width: 30%;
+        margin: auto;
+        padding: 12px;
+        border: 1px solid $light-gray;
+        font: {
+            family: $sans-fonts;
+            size: 3em;
+            weight: 300;
+        }
+        color: $light-green;
+        background-color: $dark-blue-gray;
+        text-align: center;
+    }
+    & .body {
+        width: 50%;
+        margin: auto;
+        padding: 1.2em;
+        box-shadow: 0 2px 10px $light-gray;
+        font: {
+            family: $sans-fonts;
+            size: 10pt/1.2;
+            weight: 400;
+        }
+        color: $dark-blue-gray;
+        text-align: left;
+        background: #fff;
+
+        & .b-link {
+            color: $light-blue-gray;
+            border-bottom: 1px solid $light-gray;
+            text-decoration: none;
+            transition: ease all .3s;
+            &:hover, &:focus {
+                color: $light-blue-gray;
+                border-bottom: 1px solid $light-blue-gray;
+            }
+        }
+    }
+}

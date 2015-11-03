@@ -1,0 +1,81 @@
+/* Fonts */
+/* Colors */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+.nav {
+  width: 100%;
+  height: auto;
+  margin: -10px auto;
+  position: fixed;
+  background: #5b5e63; }
+  .nav .header {
+    margin: 5px auto 5px 5%;
+    color: #93e9be;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    float: left; }
+  .nav .list {
+    list-style: none;
+    float: right;
+    margin: 10px 8% 0 auto; }
+    .nav .list .item {
+      margin: auto;
+      display: inline-block; }
+      .nav .list .item a {
+        margin: -2px;
+        padding: 10px 25px 15px 25px;
+        text-decoration: none;
+        color: #818181;
+        background-color: #5b5e63;
+        font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: ease all .2s; }
+        .nav .list .item a:hover, .nav .list .item a:active {
+          color: #f9f9fa;
+          background-color: #818181; }
+
+.article {
+  width: 100%;
+  height: auto;
+  margin: auto; }
+  .article .title {
+    width: 30%;
+    margin: auto;
+    padding: 12px;
+    border: 1px solid #f9f9fa;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    color: #93e9be;
+    background-color: #676d79;
+    text-align: center; }
+  .article .body {
+    width: 50%;
+    margin: auto;
+    padding: 1.2em;
+    box-shadow: 0 2px 10px #f9f9fa;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10pt/1.2;
+    font-weight: 400;
+    color: #676d79;
+    text-align: left;
+    background: #fff; }
+    .article .body .b-link {
+      color: #677aa0;
+      border-bottom: 1px solid #f9f9fa;
+      text-decoration: none;
+      transition: ease all .3s; }
+      .article .body .b-link:hover, .article .body .b-link:focus {
+        color: #677aa0;
+        border-bottom: 1px solid #677aa0; }
+
+/*# sourceMappingURL=style.css.map */
