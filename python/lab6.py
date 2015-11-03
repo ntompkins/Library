@@ -4,11 +4,11 @@
 
 # Define function to use for each item in the vending machine, rather than define 6 separate modules
 def item(snackname,cost): # Pass snackname and cost as arguments for each item
-	
+
 	# Print name, cost, and request confirmation of purchase
 	print("\n",snackname,", cost: $",format(cost,"1.2f"),sep="")
 	confirmation()
-	
+
 	# Payment checker and error managers
 	pass_through = False
 	while pass_through == False:
@@ -16,7 +16,7 @@ def item(snackname,cost): # Pass snackname and cost as arguments for each item
 		if money_in != 1 or 2 or 3 or 4:
 			money_in = float(input("Dollars to insert (1 - 4): "))
 			print("Please enter whole bills between 1 and 4.")
-		
+
 		if money_in > 4:
 			print("\nError, you inserted",format(money_in - cost,"2.2f"),"bills too many.")
 			print(money_in,"bills returned")
@@ -35,28 +35,28 @@ def item(snackname,cost): # Pass snackname and cost as arguments for each item
 				print("Error, please try again.")
 		else:
 			pass_through = True
-	
+
 	# Dispense item
 	print("\nDispensing your item now...")
-	
+
 	# Calulate change
 	cash_back = money_in - cost
-	
+
 	# Add money_in and cash_back to the receipt
 	receipt = "\nOrder Receipt\n-------------\nSnack name: %s\tCost: $%s\nAmount paid: $%s\tChange: $%s\n" % (snackname,cost,format(money_in,"1.2f"),format(cash_back,"1.2f"))
 	print(receipt)
-	
+
 	repeat_all()
-	
+
 # Item confirmation
 def confirmation():
 	pass_through = False
 	while pass_through == False:
 		confirm = str(input("Confirm? (Y/N) ")).upper()
-		
+
 		if confirm == "Y":
 			pass_through = True
-		
+
 		elif confirm =="N":
 			pass_through = True
 			main()
@@ -66,7 +66,7 @@ def confirmation():
 # Repeat purchase process
 def repeat_all():
 	repeat = str(input("Would you like to purchase another item? (Y/N) ")).upper()
-	
+
 	pass_through = False
 	while pass_through == False:
 		if repeat == "Y":
@@ -83,10 +83,10 @@ def main():
 	print("\nSnickers\t\tM&M\'s\t\t\tKitKat\nCost: $0.89\t\tCost: $1.39\t\tCost: $1.39\nA1\t\t\tA2\t\t\tA3")
 	print("\nLays\t\t\tDoritos\t\t\tCheetos\nCost: $0.50\t\tCost: $0.50\t\tCost: $1.49\nB1\t\t\tB2\t\t\tB3")
 	print("\nTicTac\t\t\tStarbursts\t\tSkittles\nCost: $1.04\t\tCost: $0.79\t\tCost: $2.49\nC1\t\t\tC2\t\t\tC3")
-	
+
 	# Menu outcomes
 	choice = str(input("Enter snack code (0 to quit): ")).upper()
-	
+
 	pass_through = False
 	while pass_through == False:
 		# Quit path
@@ -94,7 +94,7 @@ def main():
 			pass_through = True
 			print("Program ending...")
 			quit()
-		
+
 		# Snickers, .89
 		elif choice == "A1":
 			pass_through = True
@@ -154,7 +154,7 @@ def main():
 			pass_through = True
 			choice_error = True
 			print("Error, invalid input. Try again.")
-	
+
 	if choice_error == True:
 		repeat_all()
 main()
