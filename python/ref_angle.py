@@ -53,7 +53,7 @@ def find_all():
         precision = input("How precise do you want your answer? ")
 
         # If user enters a blank line, we set the default precision to 5
-        if precision != int:
+        if precision.isspace():
             print("\nNo precision set. Default is 5.")
             precision = 5
 
