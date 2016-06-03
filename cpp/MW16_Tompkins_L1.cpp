@@ -36,7 +36,7 @@ int main() {
 				cin >> cost;
 
 				// get tip percentage
-				cout << "What is your tip percentage? (5 = 5%) ";
+				cout << "What is your tip percentage? (5 = 5\%) ";
 				double tip_rate=0;
 				cin >> tip_rate;
 
