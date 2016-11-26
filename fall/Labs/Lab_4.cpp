@@ -9,7 +9,7 @@ double median(int *p, int size);
 void showArray(int *array, int size);
 
 int main() {
-  // Create 2 arrays, and ints to hold their size
+  // Create 2 arrays and ints to hold their size
   int even_array[6]   = {1,2,3,4,5,6},
       odd_array[5]    = {1,2,3,4,5},
       sizeOfEvenArray = 6,
