@@ -1,5 +1,5 @@
 #include <string>
-#include "Date.hpp"
+#include "date.hpp"
 
 using namespace std;
 
@@ -18,6 +18,7 @@ bool Date::setDate(int m,int d,int y) {
 void Date::setDefaultDate() {
 	month=DEFAULT_MONTH; day=DEFAULT_DAY; year=DEFAULT_YEAR;
 }
+
 // Setter functions
 bool Date::setMonth(int m) {
 	bool result=false;
@@ -89,55 +90,5 @@ string Date::toString(DateFormat df) {
 			break;
 	}
 	return result;
-}
-// Operator overloads (relational)
-// Helper function
-int yyyymmdd(Date mdy) {
-	return (mdy.getYear()*10000 + mdy.getMonth()*100 + mdy.getDay());
-}
-bool operator<(Date a, Date b) {
-	return(yyyymmdd(a) < yyyymmdd(b));
-}
-/*
-// or
-bool operator<(Date a, Date b) {
-	if(a.getYear() < b.getYear()) return true;
-	if(a.getYear() > b.getYear()) return false;
-	if(a.getMonth() < b.getMonth()) return true;
-	if(a.getMonth() > b.getMonth()) return false;
-	if(a.getDay() < b.getDay()) return true;
-	return false;
-}
-// or
-bool operator<(Date a, Date b) {
-	bool result = true;
-	if(a.year >= b.year) {
-		if(a.year > b.year)
-			result = false;
-		else {
-			if(a.month >= b.month) {
-				if(a.month > b.month)
-					result = false;
-				else {
-					if(a.day >= b.day)
-						result = false;
-				}
-			}
-		}
-	}
-	return result;
-}
-*/
-bool operator==(Date a, Date b) {
-	return(yyyymmdd(a) == yyyymmdd(b));
-}
-bool operator>(Date a, Date b) {
-	return(yyyymmdd(a) > yyyymmdd(b));
-}
-bool operator<=(Date a, Date b) {
-	return(yyyymmdd(a) <= yyyymmdd(b));
-}
-bool operator>=(Date a, Date b) {
-	return(yyyymmdd(a) >= yyyymmdd(b));
 }
 
