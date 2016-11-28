@@ -42,9 +42,9 @@ class Date {
 		// Destructors
 		~Date() {}
 		// Getters
-		int getMonth() {return month;}
-		int getDay() {return day;}
-		int getYear() {return year;}
+		int getMonth() 	{ return month; }
+		int getDay() 	{ return day;	}
+		int getYear() 	{ return year;	}
 		int getDaysInMonth(int);
 		// Setter function prototypes
 		bool setMonth(int m);
