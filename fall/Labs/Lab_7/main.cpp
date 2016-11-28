@@ -259,9 +259,9 @@ string verb(bool v) {
 // Main
 int main(int argc, char** argv) {
 	cout << "Date manipulator.\nEnter 0/0/0 to quit.\n";
-	int month, day, year;
+	int month=1, day=1, year=1990;
 	while(getDate(month, day, year, "Enter a date: ")) {
-			if(Date::isValidDate(month, day, year)) {
+	 		if(Date::isValidDate(month, day, year)) {
 				Date usrDate(month, day, year);
 				cout << usrDate.toString() << endl;
 				--usrDate;
@@ -272,7 +272,7 @@ int main(int argc, char** argv) {
 				cout << usrDate.toString() << endl;
 				usrDate++;
 				cout << usrDate.toString() << endl;
-			}
+	 		}
 	}
 	return 0;
 }
