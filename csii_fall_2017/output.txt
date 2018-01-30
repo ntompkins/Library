@@ -1,0 +1,30 @@
+Peterson, Bill
+---------------------
+Regular Pay:  $442.80
+Overtime Pay: $16.61
+Income Tax:   $34.46
+SS Tax:       $28.71
+---------------------
+Net Pay:      $396.24
+
+
+Johnson, James
+---------------------
+Regular Pay:  $684.80
+Overtime Pay: $0.00
+Income Tax:   $51.36
+SS Tax:       $42.80
+---------------------
+Net Pay:      $590.64
+
+
+Watson, Mary
+---------------------
+Regular Pay:  $679.60
+Overtime Pay: $127.43
+Income Tax:   $60.53
+SS Tax:       $50.44
+---------------------
+Net Pay:      $696.06
+
+

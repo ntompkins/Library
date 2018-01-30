@@ -1,0 +1,42 @@
+.root{
+  -fx-font-size: 25px;
+  -fx-font-family: sans-serif;
+  -fx-base: rgb(48,56,69);
+  -fx-background: rgb(48,56,69);
+}
+.red-btn {
+  -fx-text-fill: white;
+  -fx-padding: 8 15 15 15;
+  -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+  -fx-background-radius: 8;
+  -fx-background-color: #db5757;
+  -fx-effect: dropshadow( gaussian , #8b1e1e , 4,0,0,1 );
+  -fx-font-weight: normal;
+}
+.red-btn:hover {
+  -fx-background-color: #8b1e1e;
+}
+.blue-btn {
+  -fx-text-fill: white;
+  -fx-padding: 8 15 15 15;
+  -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+  -fx-background-radius: 8;
+  -fx-background-color: #0099ff;
+  -fx-effect: dropshadow( gaussian , #004776 , 4,0,0,1 );
+  -fx-font-weight: normal;
+}
+.blue-btn:hover {
+  -fx-background-color: #004776;
+}
+.green-btn {
+  -fx-text-fill: white;
+  -fx-padding: 8 15 15 15;
+  -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+  -fx-background-radius: 8;
+  -fx-background-color: #009d8d;
+  -fx-effect: dropshadow( gaussian , #00869d , 4,0,0,1 );
+  -fx-font-weight: normal;
+}
+.green-btn:hover {
+  -fx-background-color: #00869d;
+}
