@@ -1,0 +1,44 @@
++ Recursion means that a stack is being used.
+
+Towers of Hanoi Recursion Exercise
+===
+    
+    toh(n, from, to, use) {
+     // Base Case
+     if(n==1) {
+      output "move " + from + "to " + to; 
+      return;
+     }
+     // Recursion
+     toh(n-1, from, use, to);
+     output "move " + from + "to " + to;  
+     toh(n-1, use, to, from);
+    }
+    
+    Find time complexity
+    ===
+    T_toh(1) = 1
+    
+    T_toh(n) = 2*T_toh(n-1) + 1
+    T_toh(n) = 2(2T(n-2)+1) + 1 
+             = 2^2T(n-2)+2+1
+    T_toh(n) = 2^2(2T(n-3)+1)+2+1
+             = 2^3T(n-3)+2^3+2^1+2^0
+    Complexity = 2^i(n-i)+2^i+2^(i-1)+...+2^1+2^0
+    = 2^(n-1)*1+SUM(i=0;2^i;n-2);
+    = 2^(n-1)+(2^(n-1)-1)
+    = 2^n-1 --> THETA(2^n)
+
+
+Doubly Linked Lists
+===
+[left-point][data][right-point]
+// Reassign nodes in front and behind to remove node
+current.prev.next = current.next;
+current.next.prev = current.prev;
+
+// Insert new node
+current.next = head;
+current.next.prev = current;
+head = current;
+current.prev = head;
