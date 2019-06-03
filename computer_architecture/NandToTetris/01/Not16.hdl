@@ -1,0 +1,8 @@
+// Completed
+CHIP Not16 {
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+    Nand16(a=in,b=in,out=out);
+  }
